@@ -96,5 +96,7 @@ async def xp_error(ctx, error):
 
 # ⚠️ トークンを直接書かず、サーバーの秘密の保管庫から読み込むように変更
 import os
+
+# 環境変数 DISCORD_TOKEN が読めない場合は、直接トークン文字列を使用する
 TOKEN = os.getenv("DISCORD_TOKEN")
 bot.run(TOKEN)
